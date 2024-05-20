@@ -1,0 +1,7 @@
+body {
+    display: flex;
+    flex-direction: column;  /* Cambiar la dirección del flujo de los elementos a vertical */
+    align-items: center;
+    min-height: 100vh;
+    background: var(--background);
+}
