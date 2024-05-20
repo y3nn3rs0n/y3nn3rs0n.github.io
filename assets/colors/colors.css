@@ -1,4 +1,5 @@
 :root {
+    --text-color: #ffff;
     --primary-color: #007bff;
     --secondary-color: #6c757d;
     --success-color: #28a745;
@@ -6,4 +7,6 @@
     --warning-color: #ffc107;
     --info-color: #17a2b8;
     --background: #222327;
+    --agree-color: #29fd53;
+    --btn-shadow: #17a2b7;
 }
