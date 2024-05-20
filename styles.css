@@ -6,3 +6,6 @@
     box-sizing: border-box;
     font-family: montserrat, sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
