@@ -3,23 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Mi Proyecto</title>
     <link rel="stylesheet" href="/assets/colors/colors.css">
     <link rel="stylesheet" href="/assets/fonts/fonts.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="/navBar/navbar.css">
-    <link rel="stylesheet" href="/header/header.css">
-    <link rel="stylesheet" href="/body/body.css">
- 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div id="main-content"></div>
-    <div id="navbar"></div>
-    <script src="/main.js"></script>
-    <script src="/body/body.js"></script>
-    <script src="/navBar/navbar.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- header -->
+    <header class="header">
+        <a href="#" class="logo">Portafolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About me</a>
+            <a href="#studies">Studies</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-content">
+        <h3>Hola, soy</h3>
+        <h1>Yennerson Olivo</h1>
+        <h3>y soy, <span>Software Developer</span></h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iste porro dolorum. Ipsam, ea nostrum illo neque quasi autem recusandae obcaecati repellat, expedita non voluptate, corporis velit laborum magnam asperiores.</p>
+            <div class="social-media">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-whatsapp'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            </div> 
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        </div>
+        <div class="home-img">
+            <img src="/assets/images/profile.png" alt="">
+        </div>
+    </section>
+    <!-- About me -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="/assets/images/profile.png" alt="">
+        </div>
+        <div class="about-content">
+             <h2 class="heading">About <span>Me</span></h2>
+             <h3>Software Developer!</h3>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iste porro dolorum. Ipsam, ea nostrum illo neque quasi autem recusandae obcaecati repellat,
+                expedita non voluptate, corporis velit laborum magnam asperiores.</p>
+             <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+    <!-- studies -->
+     <section class="studies" id="studies">
+        <h2 class="heading">My<span> studies</span></h2>
+        <div class="studies-container">
+            <div class="studies-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Software Developer</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iste porro dolorum. Ipsam, ea nostrum illo neque quasi autem recusandae obcaecati repellat,
+               expedita non voluptate, corporis velit laborum magnam asperiores.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="studies-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Software Developer</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iste porro dolorum. Ipsam, ea nostrum illo neque quasi autem recusandae obcaecati repellat,
+           expedita non voluptate, corporis velit laborum magnam asperiores.</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+    <div class="studies-box">
+        <i class='bx bx-code-alt'></i>
+        <h3>Software Developer</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iste porro dolorum. Ipsam, ea nostrum illo neque quasi autem recusandae obcaecati repellat,
+       expedita non voluptate, corporis velit laborum magnam asperiores.</p>
+    <a href="#" class="btn">Read More</a>
+    </div>
+       </div>
+     </section>
+     <!-- skills -->
+     <section class="skills" id="skills">
+        <h2 class="heading">My<span> skills</span></h2>
+            <div class="skills-container">
+                <div class="col">
+                <h3>Desarrollador Front-End</h3>
+                <div class="info">
+                    <div class="item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span class="skill">HTML</span>
+                    <span class="level">Experimentado</span>
+                    </div>
+                    <div class="item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span class="skill">HTML</span>
+                    <span class="level">Experimentado</span>
+                    </div>
+                    <div class="item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span class="skill">HTML</span>
+                    <span class="level">Experimentado</span>
+                    </div>
+                    <div class="item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span class="skill">HTML</span>
+                    <span class="level">Experimentado</span>
+                    </div>
+                    <div class="item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span class="skill">HTML</span>
+                    <span class="level">Intermedio</span>
+                    </div>
+                    <div class="item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span class="skill">HTML</span>
+                    <span class="level">Basico</span>
+                    </div>
+                    <div class="item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span class="skill">HTML</span>
+                    <span class="level">Experimentado</span>
+                    </div>
+                    <div class="item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span class="skill">HTML</span>
+                    <span class="level">Experimentado</span>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <h3>Desarrollador Front-End</h3>
+                <div class="info">
+                    <div class="item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span class="skill">HTML</span>
+                    <span class="level">Experimentado</span>
+                    </div>
+                    <div class="item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span class="skill">HTML</span>
+                    <span class="level">Experimentado</span>
+                    </div>
+                    <div class="item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span class="skill">HTML</span>
+                    <span class="level">Experimentado</span>
+                    </div>
+                    <div class="item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span class="skill">HTML</span>
+                    <span class="level">Experimentado</span>
+                    </div>
+                    <div class="item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span class="skill">HTML</span>
+                    <span class="level">Intermedio</span>
+                    </div>
+                    <div class="item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span class="skill">HTML</span>
+                    <span class="level">Basico</span>
+                    </div>
+                    <div class="item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span class="skill">HTML</span>
+                    <span class="level">Experimentado</span>
+                    </div>
+                    <div class="item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span class="skill">HTML</span>
+                    <span class="level">Experimentado</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+    </section>
+    <!-- projects -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest<span> Projects</span></h2>
+        <div class="projects-container">
+            <div class="project-box">
+                <img src="/assets/images/project1.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Web Design</h4>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="/assets/images/project2.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Web Design</h4>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="/assets/images/project2.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Web Design</h4>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="/assets/images/project1.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Web Design</h4>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="/assets/images/project1.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Web Design</h4>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="/assets/images/project2.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Web Design</h4>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact<span> Me!</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full name">
+                <input type="email" placeholder="email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+
+        </div>
+    </section>
+    <script src="main.js"></script>
 </body>
 </html>
