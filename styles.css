@@ -383,7 +383,7 @@ span{
     flex-wrap: wrap;
 }
 
-.contact form .input-box input,
+.contact form .input-box .input-field input,
 .contact form textarea{
     width: 100%;
     padding: 1.5rem;
@@ -394,7 +394,24 @@ span{
     margin: .7rem 0;
 }
 
-.contact form .input-box input {
+.field.error .item{
+    display: block;
+    border: 1px solid red;
+}
+
+.field .text-error{
+    font-size: 1rem;
+    color: var(--error);
+    text-align: left;
+    margin: 0.5rem 0 0.7rem;
+    display: none;
+}
+
+.field.error .text-error{
+    display: block;
+}
+
+.input-box .input-field{
     width: 49%;
 }
 
