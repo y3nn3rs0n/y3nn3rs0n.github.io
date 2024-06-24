@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Mi Proyecto</title>
+    <title>Portafolio Yenner</title>
     <link rel="stylesheet" href="assets/colors/colors.css">
     <link rel="stylesheet" href="assets/fonts/fonts.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/images/portafolio.ico" >
 </head>
-<body>
+
+<body class="no-scrollbar" style="overflow-y: auto">
     <!-- header -->
     <header class="header">
         <a href="#" class="logo">Portafolio</a>
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
-            <a href="#about">About me</a>
-            <a href="#studies">Studies</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#about">Sobre mi</a>
+            <a href="#studies">Estudios</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#contact">Contactos</a>
         </nav>
     </header>
     <!-- Home -->
     <section class="home" id="home">
         <div class="home-content">
-        <h3>Hola, soy</h3>
-        <h1>Yennerson Olivo</h1>
-        <h3>y soy, <span>Software Developer</span></h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iste porro dolorum. Ipsam, ea nostrum illo neque quasi autem recusandae obcaecati repellat, expedita non voluptate, corporis velit laborum magnam asperiores.</p>
+            <h3>Hola, soy</h3>
+            <h1>Yennerson Olivo</h1>
+            <h3><span>Software Developer</span></h3>
+            <p class="p-info">¡Bienvenido a mi portafolio! Soy Programador orientado en el desarrollo frontend web y móvil. Con
+                un sólido conocimiento en tecnologías modernas, me apasiona crear soluciones innovadoras que
+                proporcionen experiencias de usuario excepcionales.</p>
             <div class="social-media">
-            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-            <a href="#"><i class='bx bxl-whatsapp'></i></a>
-            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            </div> 
-            <a href="/CertificadoDeFinalizacion_HTML esencial.pdf" class="btn" download="">Download CV</a>
+          <!--       <a href="#"><i class='bx bxl-facebook-circle'></i></a> -->
+                <a href="#"><i class='bx bxl-whatsapp'></i></a>
+             <!--    <a href="#"><i class='bx bxl-instagram-alt'></i></a> -->
+                <a href="#"><i class='bx bxl-github'></i></a>
+            </div>
+            <a href="/Curriculum YENNERSON OLIVO.pdf" class="btn" download="">Descargar Hoja de Vida</a>
         </div>
         </div>
         <div class="home-img">
@@ -48,161 +53,203 @@
             <img src="/assets/images/profile.png" alt="">
         </div>
         <div class="about-content">
-             <h2 class="heading">About <span>Me</span></h2>
-             <h3>Software Developer!</h3>
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iste porro dolorum. Ipsam, ea nostrum illo neque quasi autem recusandae obcaecati repellat,
-                expedita non voluptate, corporis velit laborum magnam asperiores.</p>
-             <a href="#" class="btn">Read More</a>
+            <h2 class="heading">Sobre <span>Mi</span></h2>
+            <h3>Software Developer!</h3>
+            <p>Mi enfoque está en crear aplicaciones eficientes, escalables y con un diseño atractivo, siempre buscando
+                mejorar y aprender nuevas tecnologías. Estoy comprometido con la calidad del código y la satisfacción
+                del usuario.</p>
+<!-- <a href="#" class="btn">Read More</a> -->
         </div>
     </section>
     <!-- studies -->
-     <section class="studies" id="studies">
-        <h2 class="heading">My<span> studies</span></h2>
+    <section class="studies" id="studies">
+        <h2 class="heading">Mis<span> Estudios</span></h2>
         <div class="studies-container">
             <div class="studies-box">
+                <i class='bx bxl-flutter'></i>
+                <h3>Flutter & Dart</h3>
+                <ul>
+                    <li>Flutter: de Cero hasta los detalles</li>
+                    <li>Dart: de cero hasta los detalles</li>
+                    <li>Flutter & Dart guia completa para crear aplicaciones</li>
+                    <li>Kotlin esencial</li>
+                    <li>sqlite en Flutter</li>
+                    <li>FlutterFlow: Creacion de Apps y paginas Web</li>
+                </ul>
+            </div>
+            <div class="studies-box">
+                <i class='bx bxl-javascript'></i>
+                <h3>Javascript & Typescript</h3>
+                <ul>
+                    <li>Animaciones con Javascript</li>
+                    <li>Curso Profesional de Javascript</li>
+                    <li>Javascript: de cero hasta los detalles (ES5)</li>
+                    <li>Curso Profesional Typescript</li>
+                    <li>Curso profesional de React</li>
+                    <li>Angular: de cero hasta los detalles</li>
+                </ul>
+            </div>
+            <div class="studies-box">
                 <i class='bx bx-code-alt'></i>
-                <h3>Software Developer</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iste porro dolorum. Ipsam, ea nostrum illo neque quasi autem recusandae obcaecati repellat,
-               expedita non voluptate, corporis velit laborum magnam asperiores.</p>
-            <a href="#" class="btn">Read More</a>
+                <h3>Others</h3>
+                <ul>
+                    <li>Curso Profesional de React</li>
+                    <li>Curso Profesional de Git</li>
+                    <li>Curso a fondo de Github</li>
+                    <li>Principios SOLID y clean code</li>
+                    <li>Fundamentos de arquitectura de software</li>
+                    <li>Bubble.io guia para creacion de apps</li>
+                </ul>
+            </div>
         </div>
-        <div class="studies-box">
-            <i class='bx bx-code-alt'></i>
-            <h3>Software Developer</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iste porro dolorum. Ipsam, ea nostrum illo neque quasi autem recusandae obcaecati repellat,
-           expedita non voluptate, corporis velit laborum magnam asperiores.</p>
-        <a href="#" class="btn">Read More</a>
-    </div>
-    <div class="studies-box">
-        <i class='bx bx-code-alt'></i>
-        <h3>Software Developer</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iste porro dolorum. Ipsam, ea nostrum illo neque quasi autem recusandae obcaecati repellat,
-       expedita non voluptate, corporis velit laborum magnam asperiores.</p>
-    <a href="#" class="btn">Read More</a>
-    </div>
-       </div>
-     </section>
-     <!-- skills -->
-     <section class="skills" id="skills">
-        <h2 class="heading">My<span> skills</span></h2>
-            <div class="skills-container">
-                <div class="col">
-                <h3>Desarrollador Front-End</h3>
+    </section>
+    <!-- skills -->
+    <section class="skills" id="skills">
+        <h2 class="heading">Mis<span> Habilidades</span></h2>
+        <div class="skills-container">
+            <div class="col">
+                <h3>Front-End</h3>
                 <div class="info">
                     <div class="item">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <span class="skill">HTML</span>
-                    <span class="level">Experimentado</span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">HTML</span>
+                        <span class="level">Intermedio</span>
                     </div>
                     <div class="item">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <span class="skill">HTML</span>
-                    <span class="level">Experimentado</span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">CSS</span>
+                        <span class="level">Intermedio</span>
                     </div>
                     <div class="item">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <span class="skill">HTML</span>
-                    <span class="level">Experimentado</span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">Javascript</span>
+                        <span class="level">Intermedio</span>
                     </div>
                     <div class="item">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <span class="skill">HTML</span>
-                    <span class="level">Experimentado</span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">Flutter</span>
+                        <span class="level">Intermedio</span>
                     </div>
                     <div class="item">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <span class="skill">HTML</span>
-                    <span class="level">Intermedio</span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">Dart</span>
+                        <span class="level">Intermedio</span>
                     </div>
                     <div class="item">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <span class="skill">HTML</span>
-                    <span class="level">Basico</span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">React</span>
+                        <span class="level">Intermedio</span>
                     </div>
                     <div class="item">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <span class="skill">HTML</span>
-                    <span class="level">Experimentado</span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">Angular</span>
+                        <span class="level">Intermedio</span>
                     </div>
                     <div class="item">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <span class="skill">HTML</span>
-                    <span class="level">Experimentado</span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">Tailwind</span>
+                        <span class="level">Intermedio</span>
                     </div>
-                </div>
-                </div>
-                <div class="col">
-                <h3>Desarrollador Front-End</h3>
-                <div class="info">
-                    <div class="item">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <span class="skill">HTML</span>
-                    <span class="level">Experimentado</span>
-                    </div>
-                    <div class="item">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <span class="skill">HTML</span>
-                    <span class="level">Experimentado</span>
-                    </div>
-                    <div class="item">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <span class="skill">HTML</span>
-                    <span class="level">Experimentado</span>
-                    </div>
-                    <div class="item">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <span class="skill">HTML</span>
-                    <span class="level">Experimentado</span>
-                    </div>
-                    <div class="item">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <span class="skill">HTML</span>
-                    <span class="level">Intermedio</span>
-                    </div>
-                    <div class="item">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <span class="skill">HTML</span>
-                    <span class="level">Basico</span>
-                    </div>
-                    <div class="item">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <span class="skill">HTML</span>
-                    <span class="level">Experimentado</span>
-                    </div>
-                    <div class="item">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <span class="skill">HTML</span>
-                    <span class="level">Experimentado</span>
-                    </div>
-                </div>
                 </div>
             </div>
+            <div class="col">
+                <h3>Bases de Datos</h3>
+                <div class="info">
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">Firebase</span>
+                        <span class="level">Intermedio</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">Mongo-DB</span>
+                        <span class="level">Basico</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <h3>Herramientas</h3>
+                <div class="info">
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">Git & GitHub</span>
+                        <span class="level">Basico</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">VS Code</span>
+                        <span class="level">Intermedio</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">PostMan</span>
+                        <span class="level">Basico</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">Jira</span>
+                        <span class="level">Basico</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">Flutter</span>
+                        <span class="skill">Devtools</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">React</span>
+                        <span class="skill">Devtools</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">IntelliJ IDEA</span>
+                        <span class="level">Basico</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
     <!-- projects -->
     <section class="projects" id="projects">
-        <h2 class="heading">Latest<span> Projects</span></h2>
+        <h2 class="heading">Ultimos<span> Proyectos</span></h2>
         <div class="projects-container">
             <div class="project-box">
                 <img src="/assets/images/project1.jpg" alt="">
                 <div class="project-layer">
-                    <h4>Web Design</h4>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <h4>Dashboard</h4><br>
+                    <div class="project-icons">
+                        <img src="/assets/images/react.png" alt="">
+                        <img src="/assets/images/firebase.png" alt="">
+                        <img src="/assets/images/tailwind.png" alt="">
+                    </div><br>
+                    <p class="description">usuario: yennerson@gmail.com</p>
+                    <p class="description">clave: 123456</p><br>
+                    <a href="https://admin-module.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="project-box">
                 <img src="/assets/images/project2.jpg" alt="">
                 <div class="project-layer">
-                    <h4>Web Design</h4>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <h4>Gif App</h4><br>
+                    <div class="project-icons">
+                        <img src="/assets/images/react.png" alt="">
+                        <img src="/assets/images/css.png" alt="">
+                    </div><br>
+                    <p class="description">conexion con api de Gifs</p>
+                    <a href="https://reactgifs.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="project-box">
                 <img src="/assets/images/project2.jpg" alt="">
                 <div class="project-layer">
-                    <h4>Web Design</h4>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur</p>
+                    <h4>Gif App</h4><br>
+                    <div class="project-icons">
+                        <img src="/assets/images/angular.png" alt="">
+                        <img src="/assets/images/css.png" alt="">
+                    </div><br>
+                    <p class="description">conexion con api de Gifs en angular</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -210,7 +257,7 @@
                 <img src="/assets/images/project1.jpg" alt="">
                 <div class="project-layer">
                     <h4>Web Design</h4>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur</p>
+                    <p class="description">Proximamente</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -218,7 +265,7 @@
                 <img src="/assets/images/project1.jpg" alt="">
                 <div class="project-layer">
                     <h4>Web Design</h4>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur</p>
+                    <p class="description">Proximamente</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -226,7 +273,7 @@
                 <img src="/assets/images/project2.jpg" alt="">
                 <div class="project-layer">
                     <h4>Web Design</h4>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur</p>
+                    <p class="description">Proximamente</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -234,33 +281,34 @@
     </section>
     <!-- contact -->
     <section class="contact" id="contact">
-        <h2 class="heading">Contact<span> Me!</span></h2>
+        <h2 class="heading">Comunicate <span>Conmigo</span></h2>
         <form action="#">
             <div class="input-box">
                 <div class="input-field field">
-                        <input type="text" placeholder="Full name" id="name" class="item" autocomplete="off">
-                        <div class="text-error name">The name can not be empty</div>
+                    <input type="text" placeholder="Nombre Completo" id="name" class="item" autocomplete="off">
+                    <div class="text-error name">Ingrese un nombre</div>
                 </div>
                 <div class="input-field field">
-                        <input type="text" placeholder="email Address" id="email" class="item" autocomplete="off">
-                        <div class="text-error email">The name can not be empty</div>
+                    <input type="text" placeholder="Correo Electronico" id="email" class="item" autocomplete="off">
+                    <div class="text-error email">Ingrese un correo electronico</div>
                 </div>
             </div>
             <div class="input-box">
                 <div class="input-field field">
-                    <input type="text" placeholder="Phone number" id="phone" class="item" autocomplete="off">
-                    <div class="text-error phone">The phone can not be empty</div>
+                    <input type="text" placeholder="Numero de telefono" id="phone" class="item" autocomplete="off">
+                    <div class="text-error phone">Ingrese un numero de telefono</div>
                 </div>
                 <div class="input-field field">
-                    <input type="text" placeholder="subject email" id="subject" class="item" autocomplete="off">
-                    <div class="text-error subject">The subject can not be empty</div>
+                    <input type="text" placeholder="Asunto" id="subject" class="item" autocomplete="off">
+                    <div class="text-error subject">El asunto no puede estar vacio</div>
                 </div>
             </div>
             <div class="input-field field">
-            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" autocomplete="off" class="item"></textarea>
-            <div class="text-error message">The message can not be empty</div>
-            <input type="submit" value="Send Message" class="btn">
-        </div>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Mensaje" autocomplete="off"
+                    class="item"></textarea>
+                <div class="text-error message">El mensaje no puede estar vacio</div>
+                <input type="submit" value="Enviar Mensaje" class="btn">
+            </div>
         </form>
     </section>
     <!-- footer -->
@@ -276,4 +324,5 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="main.js"></script>
 </body>
+
 </html>

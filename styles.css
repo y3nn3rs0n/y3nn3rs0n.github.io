@@ -11,6 +11,17 @@
     scroll-behavior: smooth;
 }
 
+/* Estilo para ocultar la scrollbar en navegadores WebKit (Chrome, Safari) */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilo para ocultar la scrollbar en otros navegadores */
+.no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
 html{
     font-size: 62.5%;
     overflow-x:  hidden;
@@ -70,12 +81,16 @@ header .sticky {
     display: none;
 }
 
+
 /* home */
 
 .home{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.home-content{
+    margin-right: 30px;
 }
 
 .home-content h3{
@@ -219,24 +234,30 @@ span{
 
 .studies-box h3{
     font-size: 2.6rem;
+    margin-top: 10px;
 }
 
-.studies-box p{
+.studies-box ul {
+    padding-left: 30px;
+    text-align: start;
+    margin-top: 30px;
+}
+
+.studies-box ul li{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
 
 /* skills */
-
-.skills-container{
+.skills-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch; /* Asegura que todas las columnas tengan la misma altura */
     flex-wrap: wrap;
     gap: 6rem;
 }
 
-.skills h2{
+.skills h2 {
     margin-bottom: 5rem;
 }
 
@@ -244,43 +265,59 @@ span{
     border: .3rem solid var(--main-color);
     padding: 3rem 2rem;
     border-radius: 10px;
+    flex: 1; /* Asegura que todas las columnas tengan el mismo tamaño */
+    max-width: 30rem; /* Evita que se agranden demasiado */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño */
+    display: flex;
+    flex-direction: column; /* Para que el contenido interno sea vertical */
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
 }
 
-.skills .col h3{
+.skills .col h3 {
     color: var(--btn-shadow);
     text-align: center;
     padding: 3rem 0;
-    font-size: 2.6rem;
+    font-size: 2.3rem;
+    align-items: start;
+    height: 100px;
+    align-self: stretch; /* Asegura que el título ocupe todo el ancho del contenedor */
 }
 
-.skills .col .info{
+.skills .col .info {
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 2rem;
+    grid-template-rows: min-content;
+    grid-gap: 2rem 3rem;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
 }
 
-.skills .col .info .item{
-  color: var(--text-color);
-  position: relative;
+.skills .col .info .item {
+    color: var(--text-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height:min-content;
 }
 
-.skills .col .info .item span{
+.skills .col .info .item span {
     display: block;
-    margin-left: 3rem;
 }
 
-.skills .col .info .item i{
+.skills .col .info .item i {
     position: absolute;
     color: var(--main-color);
     top: .5rem;
 }
 
-.skills .col .info .item .skill{
+.skills .col .info .item .skill {
     font-weight: bold;
     font-size: 1.6rem;
 }
 
-.skills .col .info .item .level{
+.skills .col .info .item .level {
     color: var(--btn-shadow);
     margin-top: .7rem;
     font-size: 1.6rem;
@@ -340,6 +377,15 @@ span{
     transform: translateY(0);
 }
 
+.project-icons{
+    display: flex;
+    gap: 1.5rem;
+}
+.project-icons img{
+    width: 25px;
+    height: 25px;
+}
+
 .project-layer h4{
     font-size: 3rem;
 }
@@ -353,8 +399,8 @@ span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     background: var(--text-color);
     border-radius: 50%;
 }

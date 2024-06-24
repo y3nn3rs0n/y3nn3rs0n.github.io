@@ -79,6 +79,8 @@ function sendEmail() {
     );*/
 }
 
+/* All inputs listeners */
+
 email.addEventListener("keyup", () => isValidEmail(email.value));
 fullName.addEventListener("keyup", () => isValidName(fullName.value));
 phoneNumber.addEventListener("keyup", () => isValidPhone(phoneNumber.value));
@@ -144,7 +146,7 @@ function isValidPhone(phone) {
     if (!isPhoneValid) {
         phoneNumber.classList.add("error");
         phoneNumber.parentElement.classList.add("error");
-        errorTxtPhone.innerText = "Enter a valid phone number";
+        errorTxtPhone.innerText = "Ingrese un numero de telefono valido";
         return false;
     } else {
         phoneNumber.classList.remove("error");
@@ -166,7 +168,7 @@ function isValidEmail(emailAddress) {
     if (!isEmailValid) {
         email.classList.add("error");
         email.parentElement.classList.add("error");
-        errorTxtEmail.innerText = "Enter a valid email address";
+        errorTxtEmail.innerText = "Ingrese una direccion de correo electronico valida";
         return false;
     } else {
         email.classList.remove("error");
@@ -187,7 +189,7 @@ function isValidName(name) {
     if (!isNameValid) {
         fullName.classList.add("error");
         fullName.parentElement.classList.add("error");
-        errorTxt.innerText = "Minimum 4 characters required";
+        errorTxt.innerText = "Requiere minimo 4 caracteres";
         return false;
     } else {
         fullName.classList.remove("error");
@@ -207,7 +209,7 @@ function isValidSubject(inputSubject) {
     if (!isSubjectValid) {
         subject.classList.add("error");
         subject.parentElement.classList.add("error");
-        errorTxt.innerText = "Minimum 4 characters required";
+        errorTxt.innerText = "Requiere minimo 4 caracteres";
         return false;
     } else {
         subject.classList.remove("error");
@@ -227,7 +229,7 @@ function isValidMessage(inputMessage) {
     if (!isMessageValid) {
         message.classList.add("error");
         message.parentElement.classList.add("error");
-        errorTxt.innerText = "Minimum 10 characters required";
+        errorTxt.innerText = "Requiere minimo 10 caracteres";
         return false;
     } else {
         message.classList.remove("error");
