@@ -2,6 +2,6 @@
 
 Sobre mi
 <hr/>
-
 - 📱Mobile Developer
 - 🌱 Actualmente estoy estudiando NodeJs
+<hr/>
