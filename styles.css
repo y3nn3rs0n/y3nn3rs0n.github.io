@@ -346,10 +346,11 @@ span{
     box-shadow: 0 0 1rem var(--background);
     overflow: hidden;
     display: flex;
+    justify-content: center;
 }
 
 .project-box img{
-    width: 100%;
+    width: auto;
     height: 280px;
     transition: .5s ease;
 }
