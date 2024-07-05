@@ -117,9 +117,9 @@ span{
 }
 
 .home-img img{
-    border-radius: 60px;
-    width: 35vw;
-    background: linear-gradient(var(--background), var(--main-color), var(--background));
+    opacity: 0.8;
+    width: 30vw;
+    background: linear-gradient(var(--background) 5%, var(--main-color), var(--background));
 }
 
 .social-media a{
@@ -172,7 +172,12 @@ span{
 }
 
 .about-img img{
-    width: 35vw;
+    opacity: 0.8;
+    width: 30vw;
+    width: 30vw;
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(var(--secundary-bg-color), var(--main-color), var(--secundary-bg-color));
 }
 
 .heading{
