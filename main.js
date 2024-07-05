@@ -51,7 +51,7 @@ const message = document.getElementById("message");
 /*Function for send email */
 
 function sendEmail() {
-    /* const bodyMessage =
+    const bodyMessage =
     `Full Name: ${fullName.value}<br>
      Email: ${email.value}<br>
      Phone: ${phone.value}<br>
@@ -66,7 +66,7 @@ function sendEmail() {
         Body : bodyMessage
     }).then(
       message => {
-        if (message == "OK") { */
+        if (message == "OK") {
         Swal.fire({
             position: "center",
             icon: "success",
@@ -74,9 +74,9 @@ function sendEmail() {
             showConfirmButton: false,
             timer: 2000
           });
-     /*    }
+        }
       } 
-    );*/
+    );
 }
 
 /* All inputs listeners */
