@@ -166,7 +166,10 @@ span{
 
 /* about me */
 
+
+
 .about{
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,10 +177,10 @@ span{
     background: var(--secundary-bg-color);
 }
 
-.about-img img{
+.about-img {
     opacity: 0.8;
-    width: 30vw;
-    width: 30vw;
+    width: 50vw;
+    height: 30vw;
     -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
   mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
     background: linear-gradient(var(--secundary-bg-color), var(--main-color), var(--secundary-bg-color));
@@ -401,6 +404,16 @@ span{
     object-fit:fill ;
 }
 
+.project-mern-icons{
+    display: flex;
+    gap: 1.5rem;
+}
+.project-mern-icons img{
+    width: 120px;
+    height:fit-content ;
+    object-fit: contain; 
+}
+
 .project-layer h4{
     font-size: 3rem;
 }
@@ -457,7 +470,6 @@ span{
 
 .field.error .item{
     display: block;
-    border: 1px solid red;
 }
 
 .field .text-error{
@@ -637,12 +649,13 @@ span{
     }
 }
 
+@media(max-width: 768px){
+    .about-img {
+        display: none; 
+    }
+}
 @media(max-width: 365px){
     .home-img img{
-        width: 90vw;
-    }
-
-    .about-img img{
         width: 90vw;
     }
 }

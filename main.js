@@ -121,7 +121,7 @@ function checkInputs() {
         isFormValid = false;
     }
 
-    if (!isValidPhone(phoneNumber.value)) {
+    if (!isValidPhone(phone.value)) {
         isFormValid = false;
     }
 
