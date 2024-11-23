@@ -3,5 +3,5 @@
 Sobre mi
 <hr/>
 - 📱Mobile Developer
-- 🌱 Actualmente estoy estudiando NodeJs
+- 🌱 Actualmente estoy estudiando React
 <hr/>
