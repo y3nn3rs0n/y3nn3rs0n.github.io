@@ -38,10 +38,10 @@ export default function Hero() {
         
         {/* Left Side: Copywriting Content */}
         <div className="lg:col-span-7 text-left space-y-6">
-          <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-sky-950/70 border border-sky-850/40 text-sky-400 font-mono text-[10.5px] font-bold">
+          {/*<div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-sky-950/70 border border-sky-850/40 text-sky-400 font-mono text-[10.5px] font-bold">
             <Sparkles className="w-3.5 h-3.5 animate-pulse-slow" />
             <span>DISPONIBLE PARA NUEVOS PROYECTOS</span>
-          </div>
+          </div>*/}
 
           <div className="space-y-4">
             <h3 className="font-sans text-xs md:text-sm font-semibold tracking-wider text-slate-400 uppercase">
@@ -54,7 +54,7 @@ export default function Hero() {
               </span>
             </h1>
             <h2 className="font-display font-bold text-xl sm:text-2xl text-slate-350">
-              Software Developer <span className="text-sky-400">//</span> Frontend & Mobile Solutions
+              Software Developer <span className="text-sky-400">/</span> Frontend & Mobile Solutions
             </h2>
           </div>
 
@@ -74,8 +74,8 @@ export default function Hero() {
             
             {/* Download Resume Link matching Curriculum PDF in markdown index */}
             <a
-              href="/Curr%C3%ADculum%20Yennerson%20Olivo.pdf"
-              download
+              href="/Currículum Yennerson Olivo.pdf"
+              download="Currículum Yennerson Olivo.pdf"
               className="px-6 py-3.5 rounded-xl text-sm font-semibold text-slate-300 bg-slate-900/60 hover:bg-slate-900 hover:text-white border border-slate-800 hover:border-slate-700/80 transition-all duration-350 flex items-center justify-center space-x-2"
             >
               <Download className="w-4 h-4 text-sky-400" />
@@ -131,7 +131,7 @@ export default function Hero() {
               <br />{'}'});
               <br /><br />
               <span className="text-emerald-400">// Estado de disponibilidad</span><br />
-              yenner.<span className="text-sky-400">checkStatus</span>(); <span className="text-slate-500">// Output: Ready to Code! 🚀</span>
+              yenner.<span className="text-sky-400">checkStatus</span>(); <span className="text-slate-500">// Output: Ready to Code!</span>
               <br /><br />
               <span className="text-indigo-400">const</span> stats = {'{'}
               <br />  coursesCompleted: <span className="text-amber-500">15</span>,

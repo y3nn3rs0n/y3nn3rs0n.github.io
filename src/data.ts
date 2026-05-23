@@ -121,20 +121,16 @@ export const skillsData: Skill[] = [
   { name: 'React.js', level: 90, category: 'frontend', iconName: 'Atom' },
   { name: 'TypeScript', level: 85, category: 'frontend', iconName: 'FileJson' },
   { name: 'JavaScript ES6+', level: 92, category: 'frontend', iconName: 'Sparkles' },
-  { name: 'HTML5 & CSS3', level: 95, category: 'frontend', iconName: 'Layers' },
   { name: 'Tailwind CSS', level: 92, category: 'frontend', iconName: 'Palette' },
   { name: 'Angular', level: 75, category: 'frontend', iconName: 'ShieldAlert' },
   
   // Mobile / Dart
   { name: 'Flutter & Dart', level: 90, category: 'mobile', iconName: 'Phone' },
-  { name: 'Kotlin', level: 70, category: 'mobile', iconName: 'Smartphone' },
   { name: 'FlutterFlow', level: 85, category: 'mobile', iconName: 'Cpu' },
-  { name: 'SQLite / Offline Sync', level: 80, category: 'mobile', iconName: 'Database' },
 
   // Low-code & DB
   { name: 'Bubble.io', level: 80, category: 'lowcode-db', iconName: 'Sparkles' },
   { name: 'Firebase', level: 85, category: 'lowcode-db', iconName: 'Flame' },
-  { name: 'PostgreSQL', level: 78, category: 'lowcode-db', iconName: 'DatabaseRestore' },
 
   // Herramientas
   { name: 'Git & GitHub', level: 90, category: 'tools', iconName: 'GitBranch' },

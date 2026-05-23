@@ -65,9 +65,6 @@ export default function Skills() {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="font-mono text-xs font-semibold tracking-widest text-sky-400 uppercase bg-sky-950/50 px-3.5 py-1.5 rounded-full border border-sky-900/30">
-            Habilidades Técnicas
-          </span>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-white mt-4 tracking-tight leading-none">
             Stack Tecnológico & Competencias
           </h2>

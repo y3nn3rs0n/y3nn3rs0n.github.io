@@ -25,14 +25,11 @@ export default function Education() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16">
           <div className="max-w-xl">
-            <span className="font-mono text-xs font-semibold tracking-widest text-sky-400 uppercase bg-sky-950/50 px-3.5 py-1.5 rounded-full border border-sky-900/30">
-              Formación & Aprendizaje
-            </span>
             <h2 className="font-display font-bold text-3xl md:text-4xl text-white mt-4 tracking-tight leading-none">
               Estudios & Certificaciones
             </h2>
             <p className="text-slate-400 mt-4 text-sm font-sans md:text-base">
-              Especialización continua en desarrollo móvil con Flutter/Kotlin, desarrollo frontend con React/Angular y aplicación de mejores prácticas de diseño SOLID.
+              Especialización continua en desarrollo móvil con Flutter, desarrollo frontend con React/Angular y aplicación de mejores prácticas de diseño SOLID.
             </p>
           </div>
 
@@ -107,25 +104,7 @@ export default function Education() {
           ))}
         </div>
 
-        {/* Micro certification seal banner */}
-        <div className="bg-gradient-to-r from-slate-900 to-indigo-950/30 p-8 rounded-3xl border border-slate-800/80 mt-12 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center space-x-4">
-            <div className="bg-sky-500/10 p-3 rounded-2xl text-sky-400">
-              <GraduationCap className="w-8 h-8" />
-            </div>
-            <div>
-              <h4 className="font-display font-semibold text-lg text-white">¿Buscas un perfil enfocado en la calidad y robustez del código?</h4>
-              <p className="text-sm text-slate-400 mt-1 font-sans">Todos mis cursos están validados en entornos reales de producción aplicando arquitectura de software limpia.</p>
-            </div>
-          </div>
-          <a
-            href="#contact"
-            className="flex items-center space-x-1.5 px-5 py-2.5 rounded-xl bg-slate-800 text-sm font-semibold border border-slate-700/80 text-white hover:bg-slate-700 transition"
-          >
-            <BookOpen className="w-4 h-4 text-sky-400" />
-            <span>Ver Hojas de Vida</span>
-          </a>
-        </div>
+       
       </div>
     </section>
   );

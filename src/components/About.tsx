@@ -41,7 +41,7 @@ export default function About() {
                   </div>
                   <div>
                     <h4 className="font-display font-medium text-slate-200 text-sm">Mentalidad Multiplataforma</h4>
-                    <p className="text-xs text-slate-400 mt-1 font-sans leading-relaxed">Mismo ecosistema conceptual para web (React) y entornos nativos para teléfonos (Flutter & Kotlin).</p>
+                    <p className="text-xs text-slate-400 mt-1 font-sans leading-relaxed">Mismo ecosistema conceptual para web (React) y entornos nativos para teléfonos (Flutter).</p>
                   </div>
                 </div>
 
@@ -70,9 +70,6 @@ export default function About() {
 
           {/* Right Column: Narrative Copywriting & Bento Highlights */}
           <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
-            <span className="font-mono text-xs font-semibold tracking-widest text-sky-400 uppercase bg-sky-950/50 px-3.5 py-1.5 rounded-full border border-sky-900/30">
-              ¿Quién es Yennerson?
-            </span>
             <h2 className="font-display font-bold text-3xl md:text-4xl text-white tracking-tight leading-none">
               Apasionado por la Ingeniería Frontend & Móvil
             </h2>

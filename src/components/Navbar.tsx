@@ -93,7 +93,7 @@ export default function Navbar() {
           ))}
           <button
             onClick={() => handleLinkClick('contact')}
-            className="ml-4 flex items-center space-x-1.5 px-4_5 py-2 rounded-lg text-sm font-semibold bg-gradient-to-r from-sky-500 to-indigo-500 text-white shadow-md shadow-sky-500/10 hover:shadow-lg hover:shadow-indigo-500/10 hover:opacity-95 transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+            className="ml-4 flex items-center space-x-1.5 px-4 py-2 rounded-lg text-sm font-semibold bg-gradient-to-r from-sky-500 to-indigo-500 text-white shadow-md shadow-sky-500/10 hover:shadow-lg hover:shadow-indigo-500/10 hover:opacity-95 transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
           >
             <span>Hablemos</span>
             <ArrowRight className="w-4 h-4" />

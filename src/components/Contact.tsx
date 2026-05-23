@@ -11,7 +11,7 @@ export default function Contact() {
   const [isSuccess, setIsSuccess] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
-  const handleSendMessage = (e: FormEvent) => {
+  const handleSendMessage = async (e: FormEvent) => {
     e.preventDefault();
     if (!name.trim() || !email.trim() || !message.trim()) {
       setErrorMsg('Por favor completa todos los campos requeridos (*).');
@@ -20,35 +20,41 @@ export default function Contact() {
     setErrorMsg('');
     setIsLoading(true);
 
-    // Use SMTP.js (loaded via index.html) to send the email like the old site
-    const bodyMessage = `Nombre: ${name}<br>Email: ${email}<br>Asunto: ${subject}<br>Mensaje: ${message}`;
+    try {
+      const formData = new FormData();
+      formData.append('name', name);
+      formData.append('email', email);
+      formData.append('subject', subject || 'Nuevo mensaje desde portfolio');
+      formData.append('message', message);
+      formData.append('_captcha', 'false'); // Disable reCAPTCHA for testing
 
-    (window as any).Email.send({
-      SecureToken: '11e52655-fa38-4719-bd98-0e61f6f48a51',
-      To: 'yennerson.olivo@gmail.com',
-      From: 'yennerson.olivo@gmail.com',
-      Subject: subject || 'Nuevo mensaje desde portfolio',
-      Body: bodyMessage,
-    }).then((resp: string) => {
-      setIsLoading(false);
-      if (resp === 'OK') {
+      const response = await fetch('https://formsubmit.co/ajax/yennerson.olivo@gmail.com', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json',
+        },
+      });
+
+      const data = await response.json();
+
+      if (response.ok || data.success) {
         setIsSuccess(true);
         setName('');
         setEmail('');
         setSubject('');
         setMessage('');
-
-        // Auto clear success pane with timeout
         setTimeout(() => setIsSuccess(false), 8000);
       } else {
-        setErrorMsg('Error al enviar el mensaje. Intenta más tarde.');
-        console.error('SMTP send response:', resp);
+        setErrorMsg('Error al enviar: ' + (data.message || 'Intenta más tarde'));
+        console.error('FormSubmit error:', data);
       }
-    }).catch((err: any) => {
+    } catch (err) {
+      console.error('Send error:', err);
+      setErrorMsg('Error de conexión. Verifica tu internet e intenta de nuevo.');
+    } finally {
       setIsLoading(false);
-      setErrorMsg('Error al enviar el mensaje. Revisa la consola.');
-      console.error(err);
-    });
+    }
   };
 
   return (
@@ -58,18 +64,12 @@ export default function Contact() {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="font-mono text-xs font-semibold tracking-widest text-sky-450 uppercase bg-sky-950/50 px-3.5 py-1.5 rounded-full border border-sky-900/30">
-            Conexión Profesional
-          </span>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-white mt-4 tracking-tight leading-none">
             Comunícate Conmigo
           </h2>
-          <p className="text-slate-400 mt-4 text-base font-sans">
-            ¿Tienes un proyecto en mente, deseas ver mi hoja de vida completa o explorar oportunidades de colaboración? Envíame un mensaje y te responderé en menos de 24 horas.
-          </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Left Column: Direct Contact details cards */}
           <div className="lg:col-span-4 space-y-6">
