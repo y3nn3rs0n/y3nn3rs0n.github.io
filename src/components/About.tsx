@@ -1,4 +1,4 @@
-import { Shield, Brain, Heart, Zap, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 export default function About() {
   return (
@@ -10,59 +10,38 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          {/* Left Column: Visual card display of his developer philosophy */}
-          <div className="lg:col-span-5 order-2 lg:order-1">
-            <div className="bg-slate-900 border border-slate-800 p-8 rounded-3xl relative overflow-hidden shadow-xl">
-              
-              {/* Card top flare */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-sky-500/10 rounded-full filter blur-[30px]" />
-              
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="bg-sky-550/15 bg-sky-500/10 p-2.5 rounded-xl text-sky-400">
-                  <Sparkles className="w-5 h-5 animate-pulse-slow" />
-                </div>
-                <h3 className="font-display font-semibold text-white text-lg">Valores Técnicos</h3>
-              </div>
-
-              <div className="space-y-6">
-                <div className="flex items-start space-x-3.5">
-                  <div className="p-1.5 bg-slate-800 border border-slate-750 text-indigo-400 rounded-lg shrink-0 mt-0.5">
-                    <Shield className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="font-display font-medium text-slate-200 text-sm">Principios SOLID & Clean Code</h4>
-                    <p className="text-xs text-slate-400 mt-1 font-sans leading-relaxed">Código diseñado para el futuro. Desacoplado, explicativo y testeable para evitar deuda de software.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-3.5">
-                  <div className="p-1.5 bg-slate-800 border border-slate-750 text-emerald-400 rounded-lg shrink-0 mt-0.5">
-                    <Brain className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="font-display font-medium text-slate-200 text-sm">Mentalidad Multiplataforma</h4>
-                    <p className="text-xs text-slate-400 mt-1 font-sans leading-relaxed">Mismo ecosistema conceptual para web (React) y entornos nativos para teléfonos (Flutter).</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-3.5">
-                  <div className="p-1.5 bg-slate-800 border border-slate-750 text-pink-400 rounded-lg shrink-0 mt-0.5">
-                    <Heart className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="font-display font-medium text-slate-200 text-sm">Enfoque UI/UX Pixel Perfect</h4>
-                    <p className="text-xs text-slate-400 mt-1 font-sans leading-relaxed">Detalles visuales minuciosos, espaciados consistentes y adaptabilidad estricta a todo tamaño de pantalla.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-3.5">
-                  <div className="p-1.5 bg-slate-800 border border-slate-750 text-amber-400 rounded-lg shrink-0 mt-0.5">
-                    <Zap className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="font-display font-medium text-slate-200 text-sm">Optimización de Rendimiento</h4>
-                    <p className="text-xs text-slate-400 mt-1 font-sans leading-relaxed">Carga instantánea, lazy loading inteligente, estados fluidos y optimización meticulosa del bundle.</p>
-                  </div>
+          {/* Left Column: Professional Photo Container */}
+          <div className="lg:col-span-5 order-2 lg:order-1 relative group flex justify-center">
+            {/* Soft glowing background element that is sensitive to hover */}
+            <div className="absolute -inset-1.5 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-3xl blur-xl opacity-20 group-hover:opacity-35 transition duration-500" />
+            
+            {/* The core photo frame container with modern gradients */}
+            <div className="relative w-full max-w-[420px] aspect-[4/5] bg-gradient-to-tr from-sky-500/30 via-slate-800 to-indigo-500/30 p-[2px] rounded-3xl shadow-2xl overflow-hidden transition-all duration-500 group-hover:scale-[1.01] hover:shadow-sky-500/5">
+              <div className="relative w-full h-full bg-slate-900 rounded-[22px] overflow-hidden pt-4">
+                {/* Profile Image (easily replaceable by user later) */}
+                <img
+                  src="https://github.com/y3nn3rs0n/y3nn3rs0n.github.io/blob/main/assets/images/profile-p.png?raw=true"
+                  alt="Yennerson Olivo - Portrait Placeholder"
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover object-top transition-all duration-700 ease-in-out scale-105 group-hover:scale-100"
+                />
+                
+                {/* Dark gradient gloss overlay to read labels cleanly */}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-90" />
+                
+                {/* Modern geometric decor: Glowing brackets */}
+                <span className="absolute top-4 left-4 w-4 h-4 border-t-2 border-l-2 border-sky-400/40 rounded-tl-sm pointer-events-none block" />
+                <span className="absolute top-4 right-4 w-4 h-4 border-t-2 border-r-2 border-indigo-400/40 rounded-tr-sm pointer-events-none block" />
+                <span className="absolute bottom-4 left-4 w-4 h-4 border-b-2 border-l-2 border-sky-400/40 rounded-bl-sm pointer-events-none block" />
+                <span className="absolute bottom-4 right-4 w-4 h-4 border-b-2 border-r-2 border-indigo-400/40 rounded-br-sm pointer-events-none block" />
+                {/* Elegant card information block */}
+                <div className="absolute bottom-6 inset-x-0 text-center px-4 space-y-1">
+                  <span className="font-mono text-[9px] tracking-widest text-sky-405 text-sky-400 uppercase font-bold block">
+                    Yennerson Olivo
+                  </span>
+                  <span className="text-[11px] text-slate-300 font-display font-medium block">
+                    Frontend & Mobile Specialist
+                  </span>
                 </div>
               </div>
             </div>
