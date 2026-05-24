@@ -4,18 +4,15 @@ import { Course } from '../types';
 import { GraduationCap, BookOpen, Clock, Award, Star } from 'lucide-react';
 
 export default function Education() {
-  const [activeTab, setActiveTab] = useState<'all' | 'flutter' | 'js-ts' | 'other'>('all');
+  const [activeTab, setActiveTab] = useState<'flutter' | 'js-ts' | 'other'>('flutter');
 
   const tabs = [
-    { label: 'Todos los Estudios', id: 'all' as const },
     { label: 'Flutter & Dart (Móvil)', id: 'flutter' as const },
     { label: 'JavaScript & React (Web)', id: 'js-ts' as const },
     { label: 'Clean Code & SOLID', id: 'other' as const }
   ];
 
-  const filteredCourses = activeTab === 'all'
-    ? coursesData
-    : coursesData.filter(c => c.category === activeTab);
+  const filteredCourses = coursesData.filter(c => c.category === activeTab);
 
   return (
     <section id="studies" className="py-24 bg-slate-950 border-b border-slate-800 relative overflow-hidden">
@@ -71,9 +68,6 @@ export default function Education() {
 
               <div>
                 <div className="mb-4 flex items-center justify-between">
-                  <div className="text-2xl bg-slate-800/60 p-2.5 rounded-xl border border-slate-700/30 group-hover:bg-slate-800 transition-colors">
-                    {course.emoji}
-                  </div>
                   <span className="text-[10px] font-mono text-slate-500">
                     ID: CERT-{course.title.slice(0, 4).toUpperCase()}-{i + 15}
                   </span>
@@ -84,22 +78,13 @@ export default function Education() {
                 </h3>
 
                 <p className="text-xs text-slate-400 mt-2 font-sans font-medium">
-                  {course.category === 'flutter' && '📱 Desarrollo de Aplicaciones Móviles Nativas y FlutterFlow.'}
-                  {course.category === 'js-ts' && '💻 Ingeniería Web, React, TypeScript y animación.'}
-                  {course.category === 'other' && '🔬 Clean Code, patrones y control de versiones profesional.'}
+                  {course.category === 'flutter' && 'Desarrollo de Aplicaciones Móviles Nativas y FlutterFlow.'}
+                  {course.category === 'js-ts' && 'Ingeniería Web, React, TypeScript y animación.'}
+                  {course.category === 'other' && 'Clean Code, patrones y control de versiones profesional.'}
                 </p>
               </div>
 
-              <div className="flex items-center justify-between mt-6 pt-4 border-t border-slate-850/60 text-slate-500 text-xs">
-                <div className="flex items-center space-x-1.5">
-                  <Clock className="w-4 h-4 text-slate-500" />
-                  <span className="font-mono">{course.duration || '24 hrs'} de aprendizaje</span>
-                </div>
-                <div className="flex items-center space-x-0.5 text-yellow-500">
-                  <Star className="w-3.5 h-3.5 fill-yellow-500" />
-                  <span className="font-mono text-[10px] text-slate-400 font-semibold">5.0</span>
-                </div>
-              </div>
+              
             </div>
           ))}
         </div>

@@ -5,28 +5,20 @@ export const coursesData: Course[] = [
   {
     title: 'Flutter: de Cero hasta los detalles',
     category: 'flutter',
-    emoji: '💙',
-    duration: '45 hrs',
     important: true
   },
   {
     title: 'Dart: de cero hasta los detalles',
     category: 'flutter',
-    emoji: '🎯',
-    duration: '20 hrs'
   },
   {
     title: 'Flutter & Dart guía completa',
     category: 'flutter',
-    emoji: '🚀',
-    duration: '60 hrs',
     important: true
   },
   {
     title: 'Kotlin esencial',
     category: 'flutter',
-    emoji: '🤖',
-    duration: '15 hrs'
   },
   {
     title: 'SQLite en Flutter',
@@ -37,82 +29,58 @@ export const coursesData: Course[] = [
   {
     title: 'FlutterFlow: Creacion de Apps',
     category: 'flutter',
-    emoji: '📱',
-    duration: '25 hrs'
   },
 
   // Javascript & Typescript
   {
     title: 'Curso profesional de React',
     category: 'js-ts',
-    emoji: '⚛️',
-    duration: '35 hrs',
     important: true
   },
   {
     title: 'Curso Profesional de TypeScript',
     category: 'js-ts',
-    emoji: '📘',
-    duration: '20 hrs',
     important: true
   },
   {
     title: 'Curso Profesional de JavaScript',
     category: 'js-ts',
-    emoji: '💛',
-    duration: '30 hrs'
   },
   {
     title: 'JavaScript: de cero hasta los detalles (ES5)',
     category: 'js-ts',
-    emoji: '📜',
-    duration: '25 hrs'
   },
   {
     title: 'Animaciones con JavaScript',
     category: 'js-ts',
-    emoji: '✨',
-    duration: '18 hrs'
   },
   {
     title: 'Angular: de cero hasta los detalles',
     category: 'js-ts',
-    emoji: '🅰️',
-    duration: '40 hrs'
   },
 
   // Otros
   {
     title: 'Principios SOLID y Clean Code',
     category: 'other',
-    emoji: '🧼',
-    duration: '20 hrs',
     important: true
   },
   {
     title: 'Fundamentos de Arquitectura de Software',
     category: 'other',
-    emoji: '🏛️',
-    duration: '15 hrs',
     important: true
   },
   {
     title: 'Curso Profesional de Git',
     category: 'other',
-    emoji: '🌿',
-    duration: '12 hrs'
   },
   {
     title: 'Curso a fondo de GitHub',
     category: 'other',
-    emoji: '🐙',
-    duration: '10 hrs'
   },
   {
     title: 'Bubble.io: Guía para creación de apps',
     category: 'other',
-    emoji: '🫧',
-    duration: '22 hrs'
   }
 ];
 

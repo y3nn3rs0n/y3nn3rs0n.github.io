@@ -42,20 +42,17 @@ const iconMap: Record<string, any> = {
 };
 
 export default function Skills() {
-  const [selectedCategory, setSelectedCategory] = useState<'all' | 'frontend' | 'mobile' | 'lowcode-db' | 'tools'>('all');
+  const [selectedCategory, setSelectedCategory] = useState<'frontend' | 'mobile' | 'lowcode-db' | 'tools'>('frontend');
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
 
   const categories = [
-    { label: 'Todos', id: 'all' as const },
     { label: 'Front-End UI', id: 'frontend' as const },
     { label: 'Móvil / Flutter', id: 'mobile' as const },
     { label: 'Low-Code & DB', id: 'lowcode-db' as const },
     { label: 'Prácticas & Tools', id: 'tools' as const },
   ];
 
-  const filteredSkills = selectedCategory === 'all'
-    ? skillsData
-    : skillsData.filter(s => s.category === selectedCategory);
+  const filteredSkills = skillsData.filter(s => s.category === selectedCategory);
 
   return (
     <section id="skills" className="py-24 bg-slate-900 border-b border-slate-800 relative overflow-hidden">
