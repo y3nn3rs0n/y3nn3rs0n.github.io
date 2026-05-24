@@ -20,7 +20,7 @@ export default function About() {
               <div className="relative w-full h-full bg-slate-900 rounded-[22px] overflow-hidden pt-4">
                 {/* Profile Image (easily replaceable by user later) */}
                 <img
-                  src="https://github.com/y3nn3rs0n/y3nn3rs0n.github.io/blob/main/assets/images/profile-p.png?raw=true"
+                  src="https://raw.githubusercontent.com/y3nn3rs0n/y3nn3rs0n.github.io/refs/heads/main/assets/images/profile-p.png?raw=true"
                   alt="Yennerson Olivo - Portrait Placeholder"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover object-top transition-all duration-700 ease-in-out scale-105 group-hover:scale-100"
