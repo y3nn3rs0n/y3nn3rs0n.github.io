@@ -33,9 +33,6 @@ export default function App() {
           <p className="font-mono tracking-widest text-[10px] uppercase text-slate-400">
             Yennerson Olivo — Portfolio 2026
           </p>
-          <p className="text-slate-550 leading-relaxed max-w-md mx-auto">
-            Construido con pasión, React, Tailwind CSS y principios de código limpio SOLID para garantizar una velocidad óptima de renderizado.
-          </p>
           <div className="text-[10px] text-slate-600 font-medium">
             Copyright © 2026 Yennerson Olivo Olivo. Todos los derechos reservados.
           </div>
