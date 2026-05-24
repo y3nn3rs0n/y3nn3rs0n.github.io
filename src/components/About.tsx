@@ -54,7 +54,7 @@ export default function About() {
             </h2>
             
             <p className="font-sans text-slate-355 text-slate-300 text-sm sm:text-base leading-relaxed">
-              Hola, soy **Yennerson Olivo**, desarrollador con una fuerte inclinación hacia la arquitectura limpia y la excelencia en el diseño interactivo. Mi trayectoria me ha permitido dominar lenguajes modernos como **TypeScript**, **Dart** y **JavaScript**, integrando soluciones completas de alto desempeño.
+              Hola, soy Yennerson Olivo, desarrollador con una fuerte inclinación hacia la arquitectura limpia y la excelencia en el diseño interactivo. Mi trayectoria me ha permitido dominar lenguajes modernos como **TypeScript**, **Dart** y **JavaScript**, integrando soluciones completas de alto desempeño.
             </p>
             <p className="font-sans text-slate-400 text-sm leading-relaxed">
               Me especializo en crear aplicaciones usando **React** para la web y **Flutter** para ecosistemas móviles. Considero que una aplicación excelente no solo debe funcionar perfectamente tras bambalinas, sino también deleitar a los usuarios en cada micro-interacción visual. Constantemente amplio mis perspectivas formándome en patrones de arquitectura de software avanzados y metodologías ágiles.
